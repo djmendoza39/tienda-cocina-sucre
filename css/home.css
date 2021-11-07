@@ -1,0 +1,163 @@
+/* estilos novedades */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+body{
+
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* estilo nav */
+.mi-estilo-navb li{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.mi-estilo-navb .estilo-logo{
+    font-size: 3rem;
+    color: rgb(80, 155, 1) !important;
+    
+}
+
+.mi-estilo-navb span{
+    font-size: 1rem;
+    color: black;
+    
+    
+}
+
+.container{
+    max-width: 70%;
+}
+
+/* carusel items */
+
+.carousel-item img{
+
+    height: 70vh;
+    object-fit: cover;
+}
+
+
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.5rem;
+}
+
+.mi-estilo-layouts{
+   grid-area: 4 /1 / 6 / 3;
+}
+
+.cajas-items:hover{
+    opacity: .6;
+    transition: 1s all ease;
+}
+
+/* seccion nosotros */
+.contenido-nosotros{
+    background-image: url(../img/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    
+    /* display flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-nosotros:before{
+    content: "";
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(38, 73, 3, 0.315);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+    
+}
+
+.mi-estilo-contenido p{
+    color: #fff;
+    font-size: 23px;
+}
+
+.contenido{
+    z-index: 10;
+}
+
+.titulo-nosotros{
+    font-size: 3vw;
+    font-weight: 800;
+    color: cornsilk;
+    
+}
+
+.parrafo-nosotros{
+    font-size: 25px;
+    color: cornsilk;
+}
+
+/* seccion llamado a la accion */
+
+.mi-estilo-contenido a{
+    padding: 1rem;
+    display: inline-block;
+    background-color: #f1f10a;
+    color: rgb(117, 113, 94);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.mi-estilo-contenido a:hover{
+    text-decoration: none;
+    background-color: rgb(64, 211, 6);
+    transition: 1s all ease-in;
+    color: #fff;
+}
+
+
+/* footer */
+
+.mi-footer{
+    background-color: #F4F4F4;
+    margin-top: 5rem;
+
+}
+.contenedores-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+   
+}
+
+.contenedor-info-redes{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.contenedor-info-redes li{
+    list-style: none;
+    padding: 1rem;
+}
+.contenedor-info-redes a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.mis-redes{
+    padding: 1rem;
+}
+

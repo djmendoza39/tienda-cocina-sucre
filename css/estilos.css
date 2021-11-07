@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #0B0F1C;
+    padding: 1rem;
+}
+/* ------------------------------------- */
+
+/* estilos header */
+.mi-header{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    color: #0B0F1C;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.boton-menu{
+    flex: 33.3%;
+    
+}
+
+.btn-hamburguesa{
+    width: 30px;
+    height: 1px;
+    background-color: #0B0F1C;
+    padding: .1rem;
+    display: block;
+    margin: .3rem;
+    cursor: pointer;
+    
+}
+
+.logo{
+    
+    flex: 33.3%;
+    text-align: center;
+}
+
+.mi-logo-estilo{
+    font-size: 30px;
+    color: darkseagreen;
+    font-weight: 700;
+}
+
+.contacto{
+    flex: 33.3%;
+    text-align: end;
+}
+
+.contacto a{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* efecto boton menu */
+.contenedor-menu{
+    background-color: #1e212daf;
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top:88px;
+    left: 0px;
+    overflow: hidden;
+    transition: .5s all;
+    text-align: center;
+    
+}
+
+.contenedor-menu a{
+    display: block;
+    font-size: 18px;
+    padding: 1.8rem;
+    color: #fff;
+    transition: .3s all ease-in;
+}
+
+.contenedor-menu a:hover{
+    background-color: #3c4151ca;
+    color: #d1c790;
+    font-size: 21px;
+    transition: .5s all ease;
+    font-weight: 700;
+}
+
+.no-visible-checked{
+    display: none;
+}
+#ocultar-menu:checked ~ .contenedor-menu{
+    width: 20%;
+    transition: 1s all;
+    
+    
+}
+
+/* slide */
+.fondo-slide{
+    background-image: url(../img/img-slide2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 91vh;
+    
+}
