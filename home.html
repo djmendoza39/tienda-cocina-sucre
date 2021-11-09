@@ -14,34 +14,36 @@
 
 <body>
 
-    <header class="mi-estilo-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light mi-estilo-navb pt-4 pb-4">
-                <a class="navbar-brand estilo-logo" href="#">MC<span>ocinas de Sucre</span></a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-end w-100">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contactanos</a>
-                        </li>
+    <!-- mi header -->
+    <header class="mi-header">
+        <div class="container contenedor-flex-header">
+            
+                <img class="mi-estilo-img" src="img/logo.png" alt="mi logo">
+                <input class="no-visible-checked" type="checkbox" name="boton" id="ocultar-menu">
+                <label for="ocultar-menu" class="mi-lbl-menu">
+                    <span class="btn-hamburguesa"></span>
+                    <span class="btn-hamburguesa"></span>
+                    <span class="btn-hamburguesa"></span>
+                </label>
+                <nav class=" mi-estilo-nav text-center w-100">
+                    <a href="#" class="mi-estilo-link">Inicio</a>
+                    <a href="#" class="mi-estilo-link">Proyectos</a>
+                    <a href="#" class="mi-estilo-link">Contactanos</a>
+                    <a href="#" class="mi-estilo-link">Ubicanos</a>
+                </nav>
 
-                    </ul>
-                </div>
-            </nav>
+                <nav class=" mi-estilo-nav-show text-center w-100">
+                    <a href="#" class="mi-estilo-link">Inicio</a>
+                    <a href="#" class="mi-estilo-link">Proyectos</a>
+                    <a href="#" class="mi-estilo-link">Contactanos</a>
+                    <a href="#" class="mi-estilo-link">Ubicanos</a>
+                </nav>
+
+            
+            
+            
         </div>
+
     </header>
     <main class="mi-estilo-main">
         <div class="container">
@@ -90,7 +92,7 @@
         <section class="mi-estilo-novedades">
             <div class="container">
 
-                <h2 class="text-center p-5 mt-5">NOVEDADES</h2>
+                <h2 class="text-center p-5 mt-5">PROYECTOS</h2>
                 <div class="contenedor-grid">
                     <div class="cajas-items">
 
@@ -197,7 +199,9 @@
     </main>
     <footer class="mi-footer">
         <div class="contenedores-footer container">
-            <h3>MC <br><span>Cocinas de Sucre</span></h3>
+            <div class="contenedor-logo">
+                <img class="mi-estilo-img img-fluid" src="img/logo.png" alt="mi logo">
+            </div>
             <div class="contenedor-info-redes">
 
                 <ul>
@@ -221,7 +225,7 @@
         </div>
         <section class="derechos-reservados text-center">
             
-                <h6 class="p-4">MCocinas de Sucre@2021</h6>
+                <h6 class="p-4">LM Cocinas de Sucre@2021</h6>
             
         </section>
         
